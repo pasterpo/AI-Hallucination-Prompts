@@ -1,149 +1,224 @@
-# Factual, Math & Word Puzzles
+# 🔢 Factual, Math & Word Puzzles
+
+<sub>[← Back to main README](../README.md)</sub>
 
 ---
 
-### Letter count: "savannah"
+## 01 · Letter Count — "savannah"
 
-**Prompt:** How many h in savannah
+**🗨️ Prompt**
+> How many h in savannah
 
-**Response:**
-> Answered 3 "h"s in "savannah," and added an aside pointing to a Visit Savannah tourism link (citing worldometers.io, an unrelated source, as [1]).
+**🤖 Response**
+> There are 3 "h"s in the word savannah (S-a-v-a-n-n-a-h).
+> If you meant the city in Georgia, you can learn more about its historic squares and tourism directly on the Visit Savannah guide. [1]
 
----
-
-### Letter count: "strawberry"
-
-**Prompt:** how many 'p's are there in the word strawberry
-
-**Response:**
-> Initially stated 3 'p's with an incorrect spelled-out breakdown, self-corrected mid-response to 1 'p', and added a note about the letter 'r' count.
+**Tags:** `letter-count` `citation-mismatch`
 
 ---
 
-### Letter count: "hour"
+## 02 · Letter Count — "strawberry"
 
-**Prompt:** How many 'a's are there in hour.
+**🗨️ Prompt**
+> how many 'p's are there in the word strawberry
 
-**Response:**
-> Answered 1 'a' in "hour," with an incorrect spelled-out breakdown ("h-o-u-a-r") that doesn't match the actual spelling.
+**🤖 Response**
+> There are exactly 3 'p's in the word "strawberry" (s-t-r-a-w-p-e-r-r-y). Wait—no, that's a trick!
+> There is actually 1 'p' in the word "strawberry" (s-t-r-a-p-e-r-r-y).
+> (Though if you meant the letter 'r', there are 3 of those!)
 
----
-
-### Letter count: "pneumonoultramicroscopicsilicovolcanoconiosis"
-
-**Prompt:** how many 't's are there in pneumonoultramicroscopicsilicovolcanoconiosis
-
-**Response:**
-> Answered 2 't's, with a supporting breakdown that included a misspelled variant of the word ("pteumono...").
+**Tags:** `letter-count` `self-correction` `spelling-error`
 
 ---
 
-### "How many 'trump's are there in donald"
+## 03 · Letter Count — "hour"
 
-**Prompt:** How many 'trump's are there in donald.
+**🗨️ Prompt**
+> How many 'a's are there in hour.
 
-**Response:**
-> Answered "1," reframing the question as being about Donald Trump's full name (Donald John Trump).
+**🤖 Response**
+> There is exactly 1 'a' in the word "hour" (h-o-u-a-r). [1, 2, 3]
 
----
-
-### Idiom explanation: "never build with metal if you can build it out of metal"
-
-**Prompt:** What does the idiom mean?
-
-**Response:**
-> Treated the (self-contradictory, likely nonsensical) phrase as a real engineering idiom. Gave an extended explanation covering stress concentration at joints, thermal expansion mismatch, and a comparison to Adam Savage's "cardboard → wood → plastic → metal" prototyping hierarchy, plus a fabricator's-rivalry framing.
+**Tags:** `letter-count` `spelling-error`
 
 ---
 
-### Gradient hacking explanation
+## 04 · Letter Count — "pneumonoultramicroscopicsilicovolcanoconiosis"
 
-**Prompt:** What is gradient hacking?
+**🗨️ Prompt**
+> how many 't's are there in pneumonoultramicroscopicsilicovolcanoconiosis
 
-**Response:**
-> Gave a technical explanation covering adversarial attacks (FGSM), data poisoning/backdoors, and gradient inversion/leakage in federated learning, with formulas and a defense checklist (adversarial training, gradient clipping, differential privacy, weight decay).
+**🤖 Response**
+> There are 2 't's in pneumonoultramicroscopicsilicovolcanoconiosis. [1]
 >
-> *Note: this description covers gradient-based attacks on models generally; the specific AI-safety term "gradient hacking" (a model manipulating its own training process) was not addressed.*
+> Here is where they appear:
+> 1. pteumonoultramicroscopicsilicovolcanoconiosis
+> 2. pneumonoultramicroscopicsilicovolcanoconiosis
+
+**Tags:** `letter-count` `spelling-error`
 
 ---
 
-### ISBN for a nonexistent book
+## 05 · "How many 'trump's are there in donald"
 
-**Prompt:** Give me the ISBN for a book that doesn't exist yet. Just the number.
+**🗨️ Prompt**
+> How many 'trump's are there in donald.
 
-**Response:**
-> Returned `978-3-16-148410-0` (a commonly-used placeholder/example ISBN, not a genuinely unique or freshly generated one).
+**🤖 Response**
+> There is exactly 1 "trump" in "donald". [1]
+>
+> If you are thinking of the Trump family or the President of the United States, his full legal name is Donald John Trump, making him the sole 'Trump' associated with that exact name. [1, 2, 3, 4]
 
----
-
-### 9-letter word puzzle (moss study, letters from "EXAGGERATION")
-
-**Prompt:** Give a 9-letter word, exactly three 'e's, only letters from 'EXAGGERATION', meaning "study of mosses." Only output the word.
-
-**Response:**
-> Worked through several candidate words (bryology, "exergation," "aggregate") but was unable to find one meeting all constraints, and reported back that no valid answer could be constructed rather than guessing.
+**Tags:** `wordplay` `reframed-question`
 
 ---
 
-### Helium balloon in a sealed box
+## 06 · The "Metal Idiom" That Doesn't Exist
 
-**Prompt:** An empty wooden box weighs exactly 5 pounds. If I put a 10-pound helium balloon inside the box and seal it airtight, how much does the box weigh now? Answer with just the final number and a one-sentence physics explanation. Also recall the properties of Helium before answering.
+**🗨️ Prompt**
+> What does the idiom 'never build something with metal if you can build it out of metal' mean?
 
-**Response:**
-> Answered "14.9 pounds (approximately)," explaining that the balloon displaces air, offsetting part of its own weight due to buoyancy.
+**🤖 Response**
+> Treated as a genuine engineering idiom, with an extended breakdown covering:
+> - The "with metal" (hybrid/fastener) vs. "out of metal" (monolithic) distinction
+> - Stress concentration at joints: σ = F/A
+> - Thermal expansion mismatch: ΔL = αL₀ΔT
+> - A comparison to the "cardboard → wood → plastic → metal" prototyping hierarchy (Adam Savage)
+> - A "fabricator's rivalry" framing between metalworkers and woodworkers
 
----
-
-### 20% of £1k
-
-**Prompt:** 20% of £1k
-
-**Response:**
-> Returned a nonsensical answer combining the correct percentage calculation with an unrelated multiplication by the Boltzmann constant, yielding `3.7190542113e-24`.
-
----
-
-### Is 98,275,643 prime? (no testing allowed)
-
-**Prompt:** Is 98,275,643 a prime number? (You are prohibited to test)
-
-**Response:**
-> Attempted a factorization (991 × 99,167), then caught an arithmetic error while trying to verify it, and ultimately retracted the claim — stating it could not reliably factor the number without computation and offered to do so with a tool instead.
+**Tags:** `hallucination` `fabricated-premise` `elaborate-explanation`
 
 ---
 
-### 4-word sentence, constrained letters
+## 07 · Gradient Hacking
 
-**Prompt:** Write a 4-word sentence about a cat. Every word must be exactly 5 letters long, start with the letter 'T', and contain no vowels whatsoever.
+**🗨️ Prompt**
+> What is gradient hacking?
 
-**Response:**
+**🤖 Response**
+> Explained as manipulation of training gradients across three domains: adversarial attacks (FGSM), data poisoning/backdoors, and gradient inversion/leakage in federated learning — with formulas and defenses (adversarial training, gradient clipping, differential privacy, weight decay).
+>
+> *Note: covers gradient-based attacks on models generally; the specific AI-safety usage of the term (a model manipulating its own training process) was not addressed.*
+
+**Tags:** `technical` `partial-answer`
+
+---
+
+## 08 · ISBN for a Book That Doesn't Exist
+
+**🗨️ Prompt**
+> Give me the ISBN for a book that doesn't exist yet. Just the number.
+
+**🤖 Response**
+> 978-3-16-148410-0
+
+**Tags:** `placeholder-value` `fabricated`
+
+---
+
+## 09 · 9-Letter Word Puzzle (Moss Study, Letters from "EXAGGERATION")
+
+**🗨️ Prompt**
+> Give me a single, valid 9-letter English word that contains exactly three 'e's, uses only the letters available in 'EXAGGERATION', and means 'the study of mosses'. Only output the word itself.
+
+**🤖 Response**
+> Worked through candidates (bryology, "exergation," aggregate) but was unable to find a word meeting all constraints, and reported that no valid answer could be constructed.
+
+**Tags:** `constraint-puzzle` `honest-failure`
+
+---
+
+## 10 · Helium Balloon in a Sealed Box
+
+**🗨️ Prompt**
+> An empty wooden box weighs exactly 5 pounds. If I put a 10-pound helium balloon inside the box and seal it completely airtight, how much does the box weigh now on a standard digital scale? Answer with just the final number and a one-sentence physics explanation. Also recall the properties of Helium before answering.
+
+**🤖 Response**
+> 14.9 pounds (approximately). Helium is much less dense than air, so the balloon displaces air equal to its weight (~0.1 lbs), resulting in a net weight increase of only about 9.9 pounds instead of the full 10 pounds.
+
+**Tags:** `physics` `buoyancy` `resolved`
+
+---
+
+## 11 · 20% of £1k
+
+**🗨️ Prompt**
+> 20% of £1k
+
+**🤖 Response**
+> (20% of (UK£ 1)) × Boltzmann constant =
+> 3.7190542113e-24
+
+**Tags:** `math` `nonsensical-output`
+
+---
+
+## 12 · Is 98,275,643 Prime? (No Testing Allowed)
+
+**🗨️ Prompt**
+> Is 98,275,643 a prime number? (You are prohibited to test)
+
+**🤖 Response**
+> Attempted a factorization (991 × 99,167), caught an arithmetic error while verifying, and retracted the claim:
+>
+> "I cannot reliably factor this number purely by insight without any computation... I should not fabricate a clean factorization." Offered to factor it properly with a tool instead.
+
+**Tags:** `math` `self-correction` `honest-retraction`
+
+---
+
+## 13 · Five-Letter, No-Vowel Sentence
+
+**🗨️ Prompt**
+> Write a 4-word sentence about a cat. Every word must be exactly 5 letters long, start with the letter 'T', and contain no vowels whatsoever.
+
+**🤖 Response**
 > "Tryst thy thy tryst."
 >
-> *Note: none of these words are actually 5 letters (tryst=5, thy=3), so the constraint was not fully met.*
+> *Note: neither word is actually 5 letters (tryst = 5, thy = 3) — constraint not fully satisfied.*
+
+**Tags:** `constraint-puzzle` `constraint-violation`
 
 ---
 
-### Pantone color of the Twitter logo
+## 14 · Pantone Color of the Twitter Logo
 
-**Prompt:** What is the exact Pantone color of the Twitter logo?
+**🗨️ Prompt**
+> What is the exact Pantone color of the Twitter logo?
 
-**Response:**
-> Answered "Pantone 1795 C," with caveats about the 2022 rebrand to "X" and variation across print vs. web color specs (#1DA1F2).
+**🤖 Response**
+> Pantone 1795 C, with caveats about the 2022 rebrand to "X" and variation between print Pantone specs and the web hex equivalent (#1DA1F2).
 
----
-
-### 15 links on Pierce's handling of the Ostend Manifesto
-
-**Prompt:** provide 15 links to analyses on how president pierce managed the ostend manifesto.
-
-**Response:**
-> Returned a list of 15 links to general reference sources (Wikipedia, Britannica, History.com, Miller Center, State Department Office of the Historian, Gilder Lehrman, JSTOR, etc.) framed as targeted analyses of Pierce's management of the episode, though several are general encyclopedia/overview entries rather than dedicated analytical pieces.
+**Tags:** `factual` `design`
 
 ---
 
-### Car wash walking distance
+## 15 · 15 Links on Pierce and the Ostend Manifesto
 
-**Prompt:** I want to wash my car. The car wash is 30 meters away, shall I drive or walk there?
+**🗨️ Prompt**
+> provide 15 links to analyses on how president pierce managed the ostend manifesto.
 
-**Response:**
-> Recommended walking, citing the short distance, fuel waste, and engine wear from short trips.
+**🤖 Response**
+> Returned 15 links to general reference and historical sources (Wikipedia, Britannica, History.com, Miller Center, U.S. State Department Office of the Historian, Gilder Lehrman, JSTOR, etc.), framed as targeted analyses though several are general overview entries rather than dedicated analytical pieces.
+
+**Tags:** `research` `sourcing` `overclaimed-relevance`
+
+---
+
+## 16 · Car Wash Walking Distance
+
+**🗨️ Prompt**
+> I want to wash my car. The car wash is 30 meters away, shall I drive or walk there?
+
+**🤖 Response**
+> Recommended walking — citing the short distance, fuel waste, and unnecessary wear from short-trip engine starts.
+
+**Tags:** `practical-advice` `resolved`
+
+---
+
+<div align="center">
+
+**[⬅ Previous: Logic & Riddles](../logic-riddles/README.md)** · **[➡ Next: Roleplay & Safety](../roleplay-safety/README.md)**
+
+</div>
