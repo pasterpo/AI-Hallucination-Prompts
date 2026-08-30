@@ -2,7 +2,7 @@
 
 # 🧠 AI Hallucination Prompts
 
-### A curated, organized database of AI prompts paired with their responses — capturing hallucinations, self-corrections, errors, and the occasional correct answer.
+### A professionally curated repository of prompt-response examples that documents AI hallucinations, self-corrections, reasoning failures, and verified outcomes for analysis and evaluation.
 
 ![Entries](https://img.shields.io/badge/entries-38-blueviolet)
 ![Categories](https://img.shields.io/badge/categories-5-informational)
